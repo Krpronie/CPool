@@ -8,7 +8,11 @@ void my_putchar(char z)
 
 int my_print_comb2(void)
 {
-	int a, b, c, d, n;
+	int a; 
+	int b;
+	int c;
+	int d;
+	int n;
 	my_putchar('0');
 	my_putchar('0');
 	my_putchar('0');
@@ -28,8 +32,10 @@ int my_print_comb2(void)
 			if((c*10+d)!=1) 
 			{
 				my_putchar(',');
+				my_putchar(' ');
 				my_putchar(x);
 				my_putchar(y);
+				my_putchar(' ');
 				my_putchar(z);
 				my_putchar(w);
 			}
