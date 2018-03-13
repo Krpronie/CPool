@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<unistd.h>
+#include <stdio.h>
+#include <unistd.h>
 
 void my_putchar(char c)
 {
 	write(1, &c, 1);	
 }
 
-int my_print_alpha()
+int my_print_alpha(void)
 {
 	char c='a';
 	while(c<='z')
@@ -17,4 +17,3 @@ int my_print_alpha()
 	my_putchar('\n');
 	return 0;
 }
-

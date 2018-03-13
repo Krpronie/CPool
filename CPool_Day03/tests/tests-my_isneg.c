@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "my_isneg.h"
 
 int main()
 {

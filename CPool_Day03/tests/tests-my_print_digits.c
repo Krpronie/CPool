@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "my_print_digits.h"
 
 int main()
 {

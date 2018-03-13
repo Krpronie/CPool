@@ -6,7 +6,7 @@ void my_putchar(char z)
 	write(1, &z, 1);
 }
 
-int my_print_comb()
+int my_print_comb(void)
 {
 	int a, b, c, n;
 	my_putchar('0');

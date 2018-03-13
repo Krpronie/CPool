@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "my_print_comb.h"
 
 int main()
 {
-	my_print_comb2();
+	my_print_comb();
 	return 0;
 }
