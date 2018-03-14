@@ -4,7 +4,9 @@
 int my_getnbr(char const *str)
 {
 	long int value;
-	int flag = 1;
+	value = 0;
+	int flag;
+	flag = 1;
 	char const *n;
 	n = str;
 	while(*n != '\0')
