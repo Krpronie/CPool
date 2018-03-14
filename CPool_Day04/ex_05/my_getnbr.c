@@ -1,16 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int my_strlen(char const *str)
-{
-	int len = 0;
-	while((*str++))
-	{
-		len++;
-	}	
-	return len;
-}
-
 int my_getnbr(char const *str)
 {
 	long int value;
@@ -44,11 +34,4 @@ int my_getnbr(char const *str)
 		return 0;
 	}
 	return (value * flag);
-}
-
-int main()
-{
-	int res = my_getnbr("a441");
-	printf("%d\n",res);
-	return 0;
 }
