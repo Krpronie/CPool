@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void my_putchar(char z)
-{
-	write(1, &z, 1);
-}
+void my_putchar(char);
 
 int my_print_comb2(void)
 {
