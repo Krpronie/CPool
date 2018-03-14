@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "my_print_alpha.h"
+
+int my_print_alpha(void);
 
 int main()
 {

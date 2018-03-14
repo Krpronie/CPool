@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void my_putchar(char);
+int my_putchar(char);
 
 int my_put_nbr(int nb)
 {

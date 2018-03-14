@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "my_isneg.h"
-
+int my_isneg(int n);
 int main()
 {
 	my_isneg(101);

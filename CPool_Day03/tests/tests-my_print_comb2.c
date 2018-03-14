@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "my_print_comb2.h"
+int my_print_comb2(void);
 
 int main()
 {

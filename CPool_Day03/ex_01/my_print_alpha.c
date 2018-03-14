@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void my_putchar(char c)
-{
-	write(1, &c, 1);	
-}
+int my_putchar(char);
 
 int my_print_alpha(void)
 {
