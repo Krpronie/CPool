@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void my_putchar(char);
-
 int my_strlen2(char const *str)
 {
 	int len = 0;
@@ -17,10 +15,17 @@ char *my_evil_str(char *str)
 {
 	int n = my_strlen2(str);
 	char *p = str + n - 1;
-	while(p >= str)
+	char *q = str;
+	char temp;
+	if(str != NULL)
 	{
-		my_putchar(*(p--));
+		while(q < p)
+		{
+			temp = *q;
+			*q++ = *p;
+			*p-- = temp;
+		}
 	}
-	return 0;
+	return str;
 }
 
