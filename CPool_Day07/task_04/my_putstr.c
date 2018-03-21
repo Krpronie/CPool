@@ -4,7 +4,8 @@
 int my_putstr(char const *str)
 {
 	int len = 0;
-	char const *n = str;
+	char const *n;
+	n = str;
 	while((*n++))
 	{
 		len++;
