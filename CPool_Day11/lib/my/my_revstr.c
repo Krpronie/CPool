@@ -2,11 +2,11 @@
 
 int my_strlen(char const *str);
 
-char *my_revstr(char const *str)
+char *my_revstr(char *str)
 {
 	int n = my_strlen(str);
-	char const *p = str + n - 1;
-	char const *q = str;
+	char *p = str + n - 1;
+	char *q = str;
 	char temp;
 	if(str != NULL)
 	{

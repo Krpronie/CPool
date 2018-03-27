@@ -2,19 +2,22 @@
 
 int my_strncmp(char const *s1, char const *s2, int n)
 {
-	if(n <= 0)
+	if(s1 == NULL && s2 == NULL)
 	{
-		return 0;
+		return -1;
 	}
-	
-	if(s1 != NULL && s2 != NULL)
+	while(n)
 	{
-		while(n-- && *s1 && *s1 == *s2)
+		if(*s1 == *s2)
 		{
 			s1++;
 			s2++;
 		}
-		return *s1 - *s2;
+		else
+		{
+			return *s1 - *s2 - '\0';
+		}
+		n--;
 	}
 	return 0;
 }
